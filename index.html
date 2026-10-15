@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash Darshan More | Java Backend Developer & AI Explorer</title>
+  <meta name="description" content="Portfolio of Yash Darshan More - Java Backend Developer specializing in scalable backend systems, Spring Boot, JDBC, Kafka, and Spring AI exploration.">
+  <meta name="keywords" content="Yash Darshan More, Java Backend Developer, Spring Boot, Spring AI, JDBC, MySQL, Apache Kafka, Pune, Portfolio">
+  <meta name="author" content="Yash Darshan More">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Yash Darshan More | Java Backend Developer">
+  <meta property="og:description" content="Building scalable backend systems and AI-powered applications. Dark anime & manga-inspired portfolio.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yashmore641.github.io/">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=JetBrains+Mono:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700;900&family=Orbitron:wght@500;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b0b14'/><path d='M25 25 L50 65 L75 25' stroke='%23ff3d81' stroke-width='12' fill='none' stroke-linecap='round'/><path d='M35 75 L65 75' stroke='%2322d3ee' stroke-width='8' stroke-linecap='round'/></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Floating Sakura Canvas -->
+  <canvas id="sakura-canvas" aria-hidden="true"></canvas>
+
+  <!-- Custom Glow Cursor -->
+  <div id="custom-cursor" class="custom-cursor" aria-hidden="true"></div>
+  <div id="custom-cursor-dot" class="custom-cursor-dot" aria-hidden="true"></div>
+
+  <!-- Page Load Intro Animation -->
+  <div id="page-loader" class="page-loader" aria-live="polite">
+    <div class="loader-emblem">
+      <div class="loader-polygon"></div>
+      <span class="loader-inner-seal">YDM</span>
+    </div>
+    <div class="loader-label">SYSTEM INITIALIZATION</div>
+    <div class="loader-jp">システム読み込み中… ロード完了までお待ちください</div>
+    <div class="loader-bar-track">
+      <div id="loader-bar-fill" class="loader-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       STICKY NAVBAR (Glassmorphism & Manga Badges)
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Manga Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Home - Yash Darshan More">
+        <div class="brand-badge">
+          <span>YDM</span>
+        </div>
+        <div class="brand-title">
+          <span class="brand-name">YASH MORE</span>
+          <span class="brand-sub">// JAVA BACKEND</span>
+        </div>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav id="nav-menu" class="nav-menu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Sakura Toggle Button -->
+        <button id="petals-toggle" class="petals-toggle-btn" aria-label="Toggle Sakura Petals">
+          🌸 Petals: On
+        </button>
+
+        <!-- Download Resume Button (Action Burst Style) -->
+        <!-- REPLACE RESUME PDF: Link points to resume.pdf in project root -->
+        <a href="resume.pdf" download="Yash_Darshan_More_Resume.pdf" class="btn-nav-resume" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Nav Toggle Hamburger -->
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================================
+         HERO SECTION
+         ======================================================================= -->
+    <section id="home" class="hero-section">
+      <div class="hero-bg-aura" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        
+        <!-- Left: Text & CTA Content -->
+        <div class="hero-content">
+          <!-- Small Tag -->
+          <div class="hero-badge-tag">
+            <span class="pulse-dot"></span>
+            <span>Hello, World! こんにちは</span>
+          </div>
+
+          <!-- Hero Name with Glitch Hover -->
+          <h1 class="hero-name">
+            <span class="gradient-text glitch-hover" title="YASH DARSHAN MORE">YASH DARSHAN MORE</span>
+          </h1>
+
+          <!-- Cycling Typing Tagline -->
+          <div class="hero-typing-wrap" aria-live="polite">
+            <span class="hero-typing-prompt">&gt;</span>
+            <span id="hero-typing-target" class="hero-typing-text">Backend Java Developer</span>
+            <span class="typing-cursor"></span>
+          </div>
+
+          <!-- One-line Pitch -->
+          <p class="hero-pitch">
+            Building scalable backend systems and AI-powered applications with robust architectures, clean Object-Oriented design, and modern distributed technologies.
+          </p>
+
+          <!-- Location & Socials Meta Row -->
+          <div class="hero-meta-row">
+            <div class="location-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Pune, India</span>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-icons-group">
+              <a href="https://www.linkedin.com/in/yash-more-aa26b6331" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+
+              <a href="https://github.com/YashMore641" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+
+              <a href="mailto:yashmore0612@gmail.com" class="social-btn" aria-label="Send Email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>View Projects</span>
+            </a>
+
+            <a href="#contact" class="btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <span>Contact Me</span>
+            </a>
+
+            <!-- REPLACE RESUME PDF: Link points to resume.pdf in project root -->
+            <a href="resume.pdf" download="Yash_Darshan_More_Resume.pdf" class="btn-outline" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Anime Hero Character at Workstation Illustration -->
+        <div class="hero-illustration-wrapper" data-tilt>
+          <div class="hero-manga-card">
+            <div class="hero-sound-burst">ドドド</div>
+            
+            <div class="hero-card-panel">
+              <!-- Stylized Anime Developer at Desk (SVG Vector Graphic) -->
+              <svg class="hero-art-svg" viewBox="0 0 460 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anime developer working at workstation with code screens">
+                <defs>
+                  <linearGradient id="screenGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#14142e"/>
+                    <stop offset="100%" stop-color="#0a0a16"/>
+                  </linearGradient>
+                  <linearGradient id="glowViolet" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#8b5cf6"/>
+                    <stop offset="100%" stop-color="#ff3d81"/>
+                  </linearGradient>
+                  <linearGradient id="neonCyanGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#22d3ee"/>
+                    <stop offset="100%" stop-color="#8b5cf6"/>
+                  </linearGradient>
+                  <filter id="neonBlur" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="6" result="blur" />
+                    <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+                  </filter>
+                </defs>
+
+                <!-- Background Speedlines / Rays -->
+                <path d="M230 180 L20 20 M230 180 L80 10 M230 180 L400 15 M230 180 L440 60" stroke="#8b5cf6" stroke-width="1.2" stroke-dasharray="6 8" opacity="0.4"/>
+                <path d="M230 180 L30 120 M230 180 L430 150 M230 180 L20 240 M230 180 L440 240" stroke="#ff3d81" stroke-width="1.2" stroke-dasharray="4 6" opacity="0.3"/>
+
+                <!-- Glow Ambient Behind Monitors -->
+                <ellipse cx="230" cy="160" rx="170" ry="110" fill="#8b5cf6" opacity="0.16" filter="url(#neonBlur)"/>
+                <ellipse cx="140" cy="140" rx="90" ry="70" fill="#22d3ee" opacity="0.14" filter="url(#neonBlur)"/>
+                <ellipse cx="320" cy="140" rx="90" ry="70" fill="#ff3d81" opacity="0.14" filter="url(#neonBlur)"/>
+
+                <!-- Holographic Floaters / Kafka & Spring Symbols -->
+                <!-- Kafka floating hexagon -->
+                <polygon points="55,95 75,85 95,95 95,115 75,125 55,115" stroke="#22d3ee" stroke-width="2" fill="#14142e" opacity="0.9"/>
+                <text x="75" y="108" fill="#22d3ee" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" text-anchor="middle">KAFKA</text>
+
+                <!-- Spring AI floating diamond -->
+                <polygon points="390,75 415,95 390,115 365,95" stroke="#ff3d81" stroke-width="2" fill="#14142e" opacity="0.9"/>
+                <text x="390" y="99" fill="#ff3d81" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">SPRING AI</text>
+
+                <!-- Left Secondary Monitor -->
+                <rect x="40" y="130" width="110" height="90" rx="4" fill="url(#screenGrad)" stroke="#2d2d5c" stroke-width="2"/>
+                <rect x="45" y="135" width="100" height="14" fill="#1f1f3e"/>
+                <circle cx="53" cy="142" r="3" fill="#ff3d81"/>
+                <circle cx="61" cy="142" r="3" fill="#fbbf24"/>
+                <circle cx="69" cy="142" r="3" fill="#22d3ee"/>
+                <line x1="50" y1="160" x2="110" y2="160" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"/>
+                <line x1="50" y1="172" x2="135" y2="172" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round"/>
+                <line x1="50" y1="184" x2="95" y2="184" stroke="#ff3d81" stroke-width="2" stroke-linecap="round"/>
+                <line x1="50" y1="196" x2="125" y2="196" stroke="#5eead4" stroke-width="2" stroke-linecap="round"/>
+                <!-- Stand -->
+                <path d="M90 220 L85 245 L105 245 L100 220" fill="#222240"/>
+
+                <!-- Right Secondary Monitor -->
+                <rect x="310" y="130" width="110" height="90" rx="4" fill="url(#screenGrad)" stroke="#2d2d5c" stroke-width="2"/>
+                <rect x="315" y="135" width="100" height="14" fill="#1f1f3e"/>
+                <circle cx="323" cy="142" r="3" fill="#ff3d81"/>
+                <circle cx="331" cy="142" r="3" fill="#fbbf24"/>
+                <circle cx="339" cy="142" r="3" fill="#22d3ee"/>
+                <!-- Bar chart on right monitor -->
+                <rect x="325" y="185" width="10" height="25" fill="#8b5cf6"/>
+                <rect x="343" y="170" width="10" height="40" fill="#ff3d81"/>
+                <rect x="361" y="160" width="10" height="50" fill="#22d3ee"/>
+                <rect x="379" y="175" width="10" height="35" fill="#fbbf24"/>
+                <rect x="397" y="155" width="10" height="55" fill="#5eead4"/>
+                <!-- Stand -->
+                <path d="M360 220 L355 245 L375 245 L370 220" fill="#222240"/>
+
+                <!-- Main Center Ultra-Wide Monitor -->
+                <rect x="135" y="80" width="190" height="135" rx="6" fill="#0c0c1a" stroke="url(#glowViolet)" stroke-width="3"/>
+                <rect x="140" y="85" width="180" height="16" fill="#1a1a36"/>
+                <text x="148" y="96" fill="#22d3ee" font-family="'JetBrains Mono', monospace" font-size="8">SpringApplication.run()</text>
+                <!-- Terminal Code Lines -->
+                <text x="148" y="116" fill="#ff3d81" font-family="'JetBrains Mono', monospace" font-size="8">@SpringBootApplication</text>
+                <text x="148" y="129" fill="#8b5cf6" font-family="'JetBrains Mono', monospace" font-size="8">public class</text>
+                <text x="212" y="129" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="8">BankingService</text>
+                <text x="282" y="129" fill="#eaeaf5" font-family="'JetBrains Mono', monospace" font-size="8">{</text>
+                <text x="156" y="142" fill="#5eead4" font-family="'JetBrains Mono', monospace" font-size="8">@Autowired</text>
+                <text x="156" y="155" fill="#8b5cf6" font-family="'JetBrains Mono', monospace" font-size="8">private</text>
+                <text x="195" y="155" fill="#eaeaf5" font-family="'JetBrains Mono', monospace" font-size="8">KafkaTemplate</text>
+                <text x="156" y="168" fill="#a2a2c4" font-family="'JetBrains Mono', monospace" font-size="7.5">// Transactions OK: 200</text>
+                <text x="156" y="181" fill="#22d3ee" font-family="'JetBrains Mono', monospace" font-size="8">&gt; JVM heap: 9.55 CGPA</text>
+                <rect x="148" y="194" width="70" height="12" rx="2" fill="#ff3d81" opacity="0.3"/>
+                <text x="152" y="203" fill="#ff3d81" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="bold">ACTIVE BUILD</text>
+                <!-- Center Stand -->
+                <path d="M220 215 L215 255 L245 255 L240 215" fill="#1f1f3d"/>
+                <ellipse cx="230" cy="255" rx="35" ry="6" fill="#14142b"/>
+
+                <!-- Desk Surface -->
+                <polygon points="10,245 450,245 460,330 0,330" fill="#141428" stroke="#2d2d5c" stroke-width="2"/>
+                <line x1="5" y1="248" x2="455" y2="248" stroke="#22d3ee" stroke-width="2" opacity="0.6"/>
+
+                <!-- RGB Gaming Desk Pad -->
+                <rect x="70" y="252" width="320" height="65" rx="4" fill="#0d0d1c" stroke="#8b5cf6" stroke-width="2"/>
+
+                <!-- Coffee Mug with Java Steam -->
+                <rect x="90" y="260" width="22" height="26" rx="3" fill="#ff3d81"/>
+                <path d="M112 266 C118 266 118 278 112 278" stroke="#ff3d81" stroke-width="2.5" fill="none"/>
+                <!-- Steam -->
+                <path d="M96 254 Q99 248 95 242 Q100 236 96 230" stroke="#ff3d81" stroke-width="1.5" fill="none" opacity="0.8"/>
+                <path d="M104 254 Q107 248 103 242 Q108 236 104 230" stroke="#22d3ee" stroke-width="1.5" fill="none" opacity="0.8"/>
+
+                <!-- RGB Keyboard with glowing keycaps -->
+                <rect x="155" y="265" width="150" height="35" rx="3" fill="#1c1c38" stroke="#2d2d5c" stroke-width="1.5"/>
+                <!-- Glow line under keyboard -->
+                <line x1="158" y1="301" x2="302" y2="301" stroke="#22d3ee" stroke-width="2"/>
+                <!-- Key rows -->
+                <line x1="162" y1="272" x2="298" y2="272" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="6 3"/>
+                <line x1="162" y1="280" x2="298" y2="280" stroke="#ff3d81" stroke-width="2" stroke-dasharray="6 3"/>
+                <line x1="162" y1="288" x2="298" y2="288" stroke="#22d3ee" stroke-width="2" stroke-dasharray="6 3"/>
+
+                <!-- Mouse & Mousepad -->
+                <ellipse cx="340" cy="282" rx="10" ry="15" fill="#26264d" stroke="#ff3d81" stroke-width="1.5"/>
+                <line x1="340" y1="267" x2="340" y2="278" stroke="#ff3d81" stroke-width="1.5"/>
+
+                <!-- Anime Developer Silhouette / Back view with Headset -->
+                <!-- Gaming Chair Back -->
+                <path d="M185 240 C185 190 275 190 275 240 L280 340 L180 340 Z" fill="#1a1a36" stroke="#2d2d5c" stroke-width="2"/>
+                <path d="M195 205 L265 205" stroke="#ff3d81" stroke-width="3" stroke-linecap="round"/>
+                
+                <!-- Shoulders & Hoodie -->
+                <path d="M175 270 C175 235 210 230 230 230 C250 230 285 235 285 270 L295 340 L165 340 Z" fill="#282852" stroke="#000" stroke-width="2"/>
+                <!-- Neon hoodie seams -->
+                <path d="M210 245 L200 320" stroke="#8b5cf6" stroke-width="2"/>
+                <path d="M250 245 L260 320" stroke="#8b5cf6" stroke-width="2"/>
+                <polygon points="230,240 220,265 240,265" fill="#ff3d81"/>
+
+                <!-- Anime Head & Spiky Hair -->
+                <circle cx="230" cy="208" r="24" fill="#fcd34d" opacity="0.3"/> <!-- soft aura -->
+                <!-- Hair back silhouette with anime spikes -->
+                <path d="M208 212 C205 190 215 170 230 170 C245 170 255 190 252 212 C245 224 215 224 208 212 Z" fill="#111124"/>
+                <path d="M208 190 L195 180 L212 182 L206 166 L222 173 L230 156 L238 173 L254 166 L248 182 L265 180 L252 190" fill="#212140" stroke="#8b5cf6" stroke-width="1.5"/>
+
+                <!-- Gaming Headphone -->
+                <path d="M206 195 C206 165 254 165 254 195" fill="none" stroke="#22d3ee" stroke-width="4" stroke-linecap="round"/>
+                <!-- Earcups with glowing ring -->
+                <circle cx="206" cy="200" r="8" fill="#1c1c38" stroke="#ff3d81" stroke-width="2"/>
+                <circle cx="254" cy="200" r="8" fill="#1c1c38" stroke="#ff3d81" stroke-width="2"/>
+                <circle cx="206" cy="200" r="3" fill="#22d3ee"/>
+                <circle cx="254" cy="200" r="3" fill="#22d3ee"/>
+
+                <!-- Floating Holographic Kanji "開発" (Development) -->
+                <text x="50" y="55" fill="rgba(34, 211, 238, 0.4)" font-family="'Noto Sans JP', sans-serif" font-size="28" font-weight="900">開発</text>
+                <text x="360" y="55" fill="rgba(255, 61, 129, 0.4)" font-family="'Noto Sans JP', sans-serif" font-size="28" font-weight="900">電脳</text>
+              </svg>
+            </div>
+
+            <!-- Manga Stats Ribbon -->
+            <div class="hero-stats-ribbon">
+              <span class="hero-status-online">STATUS: CODING AT MAXIMUM EFFICIENCY</span>
+              <span class="hero-mode-tag">ARCH: SPRING & KAFKA</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="hero-scroll-indicator" aria-label="Scroll to About section">
+        <span>Scroll Down</span>
+        <div class="scroll-mouse-icon">
+          <div class="scroll-mouse-wheel"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- Skew Divider -->
+    <div class="manga-divider-line" aria-hidden="true">
+      <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+        <polygon points="0,40 1200,0 1200,40" fill="#14142a"/>
+      </svg>
+    </div>
+
+    <!-- =======================================================================
+         ABOUT ME SECTION ("自己紹介")
+         ======================================================================= -->
+    <section id="about" class="section-skew-top">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <div class="section-jp-tag">自己紹介 – About</div>
+          <h2 class="section-title">ORIGIN <span>STORY</span></h2>
+          <p class="section-subtitle">Dedicated Java backend developer passionate about microservices, clean code, and next-gen AI integrations.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Manga-Framed Profile Photo / Avatar -->
+          <div class="about-manga-frame reveal">
+            <div class="about-panel-box" data-tilt>
+              <div class="about-frame-badge">CHARACTER PROFILE // YASH</div>
+              
+              <div class="about-avatar-wrapper">
+                <!-- PLACEHOLDER FOR PHOTO: Replace this SVG with your real image when ready, e.g. <img src="assets/yash_profile.jpg" alt="Yash Darshan More" class="avatar-manga-svg"> -->
+                <svg class="avatar-manga-svg" viewBox="0 0 400 440" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stylized Anime Developer Portrait of Yash Darshan More">
+                  <defs>
+                    <radialGradient id="avatarGlow" cx="50%" cy="40%" r="50%">
+                      <stop offset="0%" stop-color="#1e1e40"/>
+                      <stop offset="100%" stop-color="#0e0e1e"/>
+                    </radialGradient>
+                    <linearGradient id="hairGlow" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#2a2a50"/>
+                      <stop offset="100%" stop-color="#121226"/>
+                    </linearGradient>
+                  </defs>
+
+                  <!-- Backdrop -->
+                  <rect width="400" height="440" fill="url(#avatarGlow)"/>
+
+                  <!-- Halftone Dots in Manga Frame -->
+                  <g opacity="0.12" fill="#8b5cf6">
+                    <circle cx="40" cy="50" r="3"/><circle cx="80" cy="50" r="3"/><circle cx="120" cy="50" r="3"/><circle cx="160" cy="50" r="3"/><circle cx="200" cy="50" r="3"/><circle cx="240" cy="50" r="3"/><circle cx="280" cy="50" r="3"/><circle cx="320" cy="50" r="3"/><circle cx="360" cy="50" r="3"/>
+                    <circle cx="40" cy="90" r="3"/><circle cx="80" cy="90" r="3"/><circle cx="120" cy="90" r="3"/><circle cx="160" cy="90" r="3"/><circle cx="200" cy="90" r="3"/><circle cx="240" cy="90" r="3"/><circle cx="280" cy="90" r="3"/><circle cx="320" cy="90" r="3"/><circle cx="360" cy="90" r="3"/>
+                    <circle cx="40" cy="130" r="3"/><circle cx="80" cy="130" r="3"/><circle cx="120" cy="130" r="3"/><circle cx="160" cy="130" r="3"/><circle cx="200" cy="130" r="3"/><circle cx="240" cy="130" r="3"/><circle cx="280" cy="130" r="3"/><circle cx="320" cy="130" r="3"/><circle cx="360" cy="130" r="3"/>
+                  </g>
+
+                  <!-- Speedlines -->
+                  <line x1="20" y1="20" x2="120" y2="120" stroke="#ff3d81" stroke-width="1.5" opacity="0.4"/>
+                  <line x1="380" y1="20" x2="280" y2="120" stroke="#22d3ee" stroke-width="1.5" opacity="0.4"/>
+                  <line x1="10" y1="200" x2="90" y2="200" stroke="#8b5cf6" stroke-width="1.5" opacity="0.3"/>
+                  <line x1="390" y1="200" x2="310" y2="200" stroke="#8b5cf6" stroke-width="1.5" opacity="0.3"/>
+
+                  <!-- Torso & Anime Jacket -->
+                  <path d="M110 330 C110 270 160 260 200 260 C240 260 290 270 290 330 L340 440 L60 440 Z" fill="#181836" stroke="#000" stroke-width="3"/>
+                  <!-- Inner Shirt -->
+                  <polygon points="200,285 165,370 235,370" fill="#ff3d81" opacity="0.85"/>
+                  <path d="M165 370 L200 440 L235 370" fill="#22d3ee" opacity="0.75"/>
+                  <!-- Collar Lapels -->
+                  <path d="M140 280 L185 360 L160 365 L115 300 Z" fill="#24244a" stroke="#8b5cf6" stroke-width="2"/>
+                  <path d="M260 280 L215 360 L240 365 L285 300 Z" fill="#24244a" stroke="#8b5cf6" stroke-width="2"/>
+
+                  <!-- Neck & Shadow -->
+                  <rect x="180" y="225" width="40" height="50" rx="6" fill="#e2c5a8"/>
+                  <path d="M180 245 Q200 260 220 245 L220 275 L180 275 Z" fill="#c79f7c"/>
+
+                  <!-- Face Shape -->
+                  <path d="M145 160 Q145 235 200 250 Q255 235 255 160 Q255 125 200 125 Q145 125 145 160 Z" fill="#f5d6ba" stroke="#000" stroke-width="2.5"/>
+
+                  <!-- Confident Anime Eyes -->
+                  <!-- Left Eye -->
+                  <path d="M165 175 Q178 168 188 173" stroke="#000" stroke-width="3.5" stroke-linecap="round"/>
+                  <ellipse cx="177" cy="182" rx="6.5" ry="8" fill="#14142a"/>
+                  <ellipse cx="177" cy="183" rx="4" ry="5.5" fill="#8b5cf6"/>
+                  <circle cx="175" cy="180" r="2.2" fill="#fff"/>
+                  <!-- Right Eye -->
+                  <path d="M212 173 Q222 168 235 175" stroke="#000" stroke-width="3.5" stroke-linecap="round"/>
+                  <ellipse cx="223" cy="182" rx="6.5" ry="8" fill="#14142a"/>
+                  <ellipse cx="223" cy="183" rx="4" ry="5.5" fill="#8b5cf6"/>
+                  <circle cx="221" cy="180" r="2.2" fill="#fff"/>
+
+                  <!-- Eyebrows -->
+                  <path d="M162 163 L188 166" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M212 166 L238 163" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+
+                  <!-- Anime Nose & Smirk -->
+                  <path d="M198 190 L195 202 L201 202" stroke="#b08461" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M190 218 Q200 224 212 217" stroke="#000" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+                  <line x1="212" y1="217" x2="215" y2="214" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+
+                  <!-- Stylish Glasses (Cyber-Developer Look) -->
+                  <rect x="156" y="166" width="38" height="24" rx="4" fill="none" stroke="#22d3ee" stroke-width="2.5"/>
+                  <rect x="206" y="166" width="38" height="24" rx="4" fill="none" stroke="#22d3ee" stroke-width="2.5"/>
+                  <line x1="194" y1="176" x2="206" y2="176" stroke="#22d3ee" stroke-width="2.5"/>
+                  <!-- Glass glint -->
+                  <line x1="162" y1="172" x2="175" y2="182" stroke="#fff" stroke-width="1.8" opacity="0.8"/>
+                  <line x1="212" y1="172" x2="225" y2="182" stroke="#fff" stroke-width="1.8" opacity="0.8"/>
+
+                  <!-- Anime Spiky Hair with Neon Highlights -->
+                  <path d="M140 160 C130 115 155 75 200 70 C245 75 270 115 260 160 C265 140 275 130 280 145 C275 110 250 65 200 60 C150 65 125 110 120 145 Z" fill="#121226"/>
+                  <!-- Spikes on Top -->
+                  <polygon points="170,85 185,45 195,78" fill="#1e1e38" stroke="#8b5cf6" stroke-width="1.5"/>
+                  <polygon points="195,75 210,38 225,75" fill="#1e1e38" stroke="#ff3d81" stroke-width="1.5"/>
+                  <polygon points="225,78 240,48 248,88" fill="#1e1e38" stroke="#22d3ee" stroke-width="1.5"/>
+                  <polygon points="145,110 130,85 155,95" fill="#1e1e38" stroke="#8b5cf6" stroke-width="1.5"/>
+                  <polygon points="255,110 270,85 245,95" fill="#1e1e38" stroke="#22d3ee" stroke-width="1.5"/>
+                  <!-- Front Bangs -->
+                  <polygon points="152,125 168,155 174,130" fill="#16162e"/>
+                  <polygon points="175,128 190,160 198,128" fill="#1e1e3a"/>
+                  <polygon points="202,128 215,160 225,128" fill="#16162e"/>
+                  <polygon points="228,130 242,155 248,125" fill="#1e1e3a"/>
+                </svg>
+
+                <div class="about-avatar-watermark">無双</div>
+              </div>
+
+              <!-- Caption Box -->
+              <div class="about-caption-box">
+                <span>ROLE: BACKEND SPECIALIST</span>
+                <span style="color: var(--accent-cyan);">BASE: PUNE, IN</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Narrative Comic Box & Animated Stats -->
+          <div class="about-narrative reveal">
+            <!-- Comic Dialogue Speech Bubble -->
+            <div class="comic-dialogue-bubble">
+              <p>
+                I am a <strong class="about-highlight">Java Backend Developer</strong> with a strong foundation in <strong class="about-highlight">Java, OOP, JDBC, and MySQL</strong>. I enjoy building robust backend applications and solving real-world challenges through clean, maintainable code.
+              </p>
+              <br>
+              <p>
+                I built a complete <strong class="about-highlight">Banking Application</strong> using Java and JDBC to manage seamless transactional integrity. Currently, I am actively leveling up in <strong class="about-target">Spring Boot</strong> and <strong class="about-target">Spring AI</strong> to architect scalable backend systems and intelligent AI-powered applications.
+              </p>
+              <br>
+              <p>
+                I am actively seeking software engineering opportunities to gain deep practical industry experience and grow as a high-impact backend developer!
+              </p>
+            </div>
+
+            <!-- 3 Animated Stat Cards -->
+            <div class="about-stats-grid">
+              <!-- Stat 1: CGPA -->
+              <div class="stat-card" data-tilt>
+                <div class="stat-card-badge">RANK S</div>
+                <div class="stat-value">9.55</div>
+                <div class="stat-label">CGPA in B.E. (Information Technology)</div>
+              </div>
+
+              <!-- Stat 2: JPMorgan Tasks -->
+              <div class="stat-card" data-tilt>
+                <div class="stat-card-badge">FORAGE</div>
+                <div class="stat-value">5</div>
+                <div class="stat-label">Backend Tasks Completed (JPMorgan Simulation)</div>
+              </div>
+
+              <!-- Stat 3: Oracle Cloud Cert -->
+              <div class="stat-card" data-tilt>
+                <div class="stat-card-badge">CERTIFIED</div>
+                <div class="stat-value">1</div>
+                <div class="stat-label">Oracle Cloud Infrastructure Certification</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skew Divider -->
+    <div class="manga-divider-line" aria-hidden="true">
+      <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+        <polygon points="0,0 1200,40 0,40" fill="#14142a"/>
+      </svg>
+    </div>
+
+    <!-- =======================================================================
+         SKILLS SECTION ("スキル") - RPG POWER LEVEL STYLE
+         ======================================================================= -->
+    <section id="skills" class="section-skew-top">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <div class="section-jp-tag">スキル – Skills</div>
+          <h2 class="section-title">POWER LEVEL <span>&amp; ARSENAL</span></h2>
+          <p class="section-subtitle">Real skills with transparent proficiency tiers. No arbitrary 100% metrics — evaluated as Proficient, Intermediate, or Currently Training.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-rpg-container">
+          
+          <!-- Category 1: Languages & Core -->
+          <div class="skill-category-card reveal" data-tilt>
+            <div class="category-header">
+              <div class="category-title-group">
+                <div class="category-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <h3 class="category-title">Languages &amp; Core</h3>
+              </div>
+              <span class="category-rank-tag">CORE TREE</span>
+            </div>
+
+            <div class="skill-list">
+              <!-- Java -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <div class="skill-name-wrap">
+                    <span class="skill-name">Java</span>
+                  </div>
+                  <span class="skill-tier-badge tier-proficient">Proficient</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-proficient" data-level="88"></div>
+                </div>
+              </div>
+
+              <!-- SQL -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <div class="skill-name-wrap">
+                    <span class="skill-name">SQL</span>
+                  </div>
+                  <span class="skill-tier-badge tier-proficient">Proficient</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-proficient" data-level="84"></div>
+                </div>
+              </div>
+
+              <!-- OOP -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <div class="skill-name-wrap">
+                    <span class="skill-name">Object-Oriented Programming (OOP)</span>
+                  </div>
+                  <span class="skill-tier-badge tier-proficient">Proficient</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-proficient" data-level="86"></div>
+                </div>
+              </div>
+
+              <!-- DSA -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <div class="skill-name-wrap">
+                    <span class="skill-name">Data Structures &amp; Algorithms</span>
+                  </div>
+                  <span class="skill-tier-badge tier-intermediate">Intermediate</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-intermediate" data-level="75"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Databases & Connectivity -->
+          <div class="skill-category-card reveal" data-tilt>
+            <div class="category-header">
+              <div class="category-title-group">
+                <div class="category-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                  </svg>
+                </div>
+                <h3 class="category-title">Databases &amp; Connectivity</h3>
+              </div>
+              <span class="category-rank-tag">STORAGE</span>
+            </div>
+
+            <div class="skill-list">
+              <!-- MySQL -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <div class="skill-name-wrap">
+                    <span class="skill-name">MySQL</span>
+                  </div>
+                  <span class="skill-tier-badge tier-proficient">Proficient</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-proficient" data-level="85"></div>
+                </div>
+              </div>
+
+              <!-- JDBC -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <div class="skill-name-wrap">
+                    <span class="skill-name">JDBC (Java Database Connectivity)</span>
+                  </div>
+                  <span class="skill-tier-badge tier-proficient">Proficient</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-proficient" data-level="82"></div>
+                </div>
+              </div>
+
+              <!-- H2 -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <div class="skill-name-wrap">
+                    <span class="skill-name">H2 (In-Memory Database)</span>
+                  </div>
+                  <span class="skill-tier-badge tier-intermediate">Intermediate</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-intermediate" data-level="72"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Backend & Frameworks (Spring Boot / AI) -->
+          <div class="skill-category-card reveal" data-tilt>
+            <div class="category-header">
+              <div class="category-title-group">
+                <div class="category-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                  </svg>
+                </div>
+                <h3 class="category-title">Backend &amp; Frameworks</h3>
+              </div>
+              <span class="category-rank-tag">MODERN TECH</span>
+            </div>
+
+            <div class="skill-list">
+              <!-- Spring Boot (Training) -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <div class="skill-name-wrap">
+                    <span class="skill-name">Spring Boot</span>
+                    <span class="training-badge">🔥 Currently Training</span>
+                  </div>
+                  <span class="skill-tier-badge tier-learning">Learning</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-learning" data-level="62"></div>
+                </div>
+              </div>
+
+              <!-- Spring AI (Training) -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <div class="skill-name-wrap">
+                    <span class="skill-name">Spring AI</span>
+                    <span class="training-badge">⚡ Currently Training</span>
+                  </div>
+                  <span class="skill-tier-badge tier-learning">Learning</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-learning" data-level="58"></div>
+                </div>
+              </div>
+
+              <!-- REST API Basics -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <div class="skill-name-wrap">
+                    <span class="skill-name">REST API Basics &amp; Architecture</span>
+                  </div>
+                  <span class="skill-tier-badge tier-intermediate">Intermediate</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-intermediate" data-level="78"></div>
+                </div>
+              </div>
+
+              <!-- Apache Kafka -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <div class="skill-name-wrap">
+                    <span class="skill-name">Apache Kafka (Message Streaming)</span>
+                  </div>
+                  <span class="skill-tier-badge tier-intermediate">Intermediate</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-intermediate" data-level="70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & Cloud -->
+          <div class="skill-category-card reveal" data-tilt>
+            <div class="category-header">
+              <div class="category-title-group">
+                <div class="category-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                  </svg>
+                </div>
+                <h3 class="category-title">Tools &amp; Cloud</h3>
+              </div>
+              <span class="category-rank-tag">INFRA</span>
+            </div>
+
+            <div class="skill-list">
+              <!-- Git & GitHub -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <div class="skill-name-wrap">
+                    <span class="skill-name">Git &amp; GitHub (Version Control)</span>
+                  </div>
+                  <span class="skill-tier-badge tier-proficient">Proficient</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-proficient" data-level="82"></div>
+                </div>
+              </div>
+
+              <!-- Oracle Cloud Infrastructure -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <div class="skill-name-wrap">
+                    <span class="skill-name">Oracle Cloud Infrastructure (OCI)</span>
+                  </div>
+                  <span class="skill-tier-badge tier-intermediate">Intermediate</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill fill-intermediate" data-level="76"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skew Divider -->
+    <div class="manga-divider-line" aria-hidden="true">
+      <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+        <polygon points="0,40 1200,0 1200,40" fill="#14142a"/>
+      </svg>
+    </div>
+
+    <!-- =======================================================================
+         EXPERIENCE SECTION ("経歴") - VERTICAL MANGA TIMELINE
+         ======================================================================= -->
+    <section id="experience" class="section-skew-top">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <div class="section-jp-tag">経歴 – Experience</div>
+          <h2 class="section-title">CHRONICLES <span>OF WORK</span></h2>
+          <p class="section-subtitle">Real-world internships, simulated enterprise financial architecture, and technical campus leadership.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Entry 1: Saiket Systems -->
+          <div class="timeline-entry reveal">
+            <div class="timeline-node" aria-hidden="true">
+              <div class="timeline-node-inner"></div>
+            </div>
+            
+            <div class="timeline-card" data-tilt>
+              <span class="timeline-chapter-label">// CHAPTER 03: FULL STACK INTERNSHIP</span>
+              
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Full Stack Developer Intern</h3>
+                  <div class="timeline-company">Saiket Systems</div>
+                </div>
+                <span class="timeline-date-chip">03/2026 – 04/2026</span>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li>Managed and built robust REST APIs as part of the core full stack development team.</li>
+                <!-- PLACEHOLDER: add 1-2 more bullets, e.g. technologies used, features built, or results achieved -->
+                <li>Collaborated on modular backend endpoints, data validation, and end-to-end integration with client interfaces.</li>
+                <li>Participated in code reviews, bug remediation, and performance tuning for critical services.</li>
+              </ul>
+
+              <div class="timeline-tags-group">
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">Full Stack Development</span>
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">JSON</span>
+                <span class="tech-tag">API Testing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Entry 2: JPMorgan Chase & Co. -->
+          <div class="timeline-entry reveal">
+            <div class="timeline-node" aria-hidden="true">
+              <div class="timeline-node-inner"></div>
+            </div>
+            
+            <div class="timeline-card" data-tilt>
+              <span class="timeline-chapter-label">// CHAPTER 02: ENTERPRISE SIMULATION</span>
+              
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Software Engineering Virtual Intern</h3>
+                  <div class="timeline-company">JPMorgan Chase &amp; Co. (via Forage) • Remote</div>
+                </div>
+                <span class="timeline-date-chip">11/2025 – 12/2025</span>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li>Completed 5 backend development tasks including project setup, Kafka integration, H2 database configuration, and REST API development.</li>
+                <li>Implemented 3+ REST API endpoints and controllers to simulate backend services in a high-security financial system.</li>
+                <li>Integrated 1 messaging system (Apache Kafka) and configured 1 in-memory database (H2) for testing and development.</li>
+                <li>Gained hands-on experience with multiple backend technologies in a real-world enterprise software engineering simulation.</li>
+              </ul>
+
+              <div class="timeline-tags-group">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">Apache Kafka</span>
+                <span class="tech-tag">H2 Database</span>
+                <span class="tech-tag">REST Services</span>
+                <span class="tech-tag">Financial Architecture</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Entry 3: GeeksforGeeks Campus Ambassador -->
+          <div class="timeline-entry reveal">
+            <div class="timeline-node" aria-hidden="true">
+              <div class="timeline-node-inner"></div>
+            </div>
+            
+            <div class="timeline-card" data-tilt>
+              <span class="timeline-chapter-label">// CHAPTER 01: CAMPUS LEADERSHIP</span>
+              
+              <div class="timeline-header">
+                <div>
+                  <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+                    <h3 class="timeline-title">Campus Ambassador</h3>
+                    <span class="burst-badge cyan">AMBASSADOR</span>
+                  </div>
+                  <div class="timeline-company">GeeksforGeeks</div>
+                </div>
+                <span class="timeline-date-chip">01/2026 – 06/2026</span>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li>Represented GeeksforGeeks on campus as an active Campus Ambassador.</li>
+                <!-- PLACEHOLDER: add 1-2 bullets, e.g. events or workshops organized, students reached, communities built -->
+                <li>Promoted coding contests, DSA study tracks, and technical workshop initiatives across peer student groups.</li>
+                <li>Fostered an engaging developer culture by mentoring fellow peers on foundational computer science practices.</li>
+              </ul>
+
+              <div class="timeline-tags-group">
+                <span class="tech-tag">Community Building</span>
+                <span class="tech-tag">Leadership</span>
+                <span class="tech-tag">Mentoring</span>
+                <span class="tech-tag">DSA Evangelism</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skew Divider -->
+    <div class="manga-divider-line" aria-hidden="true">
+      <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+        <polygon points="0,0 1200,40 0,40" fill="#14142a"/>
+      </svg>
+    </div>
+
+    <!-- =======================================================================
+         EDUCATION SECTION ("学歴") - QUEST LOG CARDS
+         ======================================================================= -->
+    <section id="education" class="section-skew-top">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <div class="section-jp-tag">学歴 – Education</div>
+          <h2 class="section-title">ACADEMIC <span>QUEST LOG</span></h2>
+          <p class="section-subtitle">Formal education milestones, engineering coursework, and distinguished scholastic achievements.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="education-quest-grid">
+          
+          <!-- Quest 1: SPPU -->
+          <div class="quest-card reveal" data-tilt>
+            <div class="quest-stamp in-progress">ACTIVE QUEST</div>
+            <div class="quest-rank">LEVEL 4 // UNDERGRADUATE DEGREE</div>
+            <h3 class="quest-institution">Savitribai Phule Pune University</h3>
+            <p class="quest-degree">Bachelor of Engineering (Information Technology)</p>
+            
+            <div class="quest-meta-row">
+              <span>TIMELINE: 09/2024 – 09/2028</span>
+              <span class="quest-score-highlight">CGPA: 9.55 / 10.0</span>
+            </div>
+
+            <ul class="quest-perks">
+              <li>Comprehensive coursework in OOP, Database Management Systems, and OS.</li>
+              <li>Consistently maintained top percentile academic standings across technical evaluations.</li>
+              <li>Active participant in algorithm design hackathons and university technical societies.</li>
+            </ul>
+          </div>
+
+          <!-- Quest 2: Higher Secondary -->
+          <div class="quest-card reveal" data-tilt>
+            <div class="quest-stamp completed">QUEST CLEARED</div>
+            <div class="quest-rank">LEVEL 2 // JUNIOR COLLEGE</div>
+            <h3 class="quest-institution">Higher Secondary Certificate</h3>
+            <p class="quest-degree">12th Science Stream (Physics, Chemistry, Mathematics)</p>
+            
+            <div class="quest-meta-row">
+              <span>TIMELINE: 07/2022 – 05/2024</span>
+              <span class="quest-score-highlight">STREAM: SCIENCE</span>
+            </div>
+
+            <ul class="quest-perks">
+              <li>Solid mathematical grounding in calculus, logic, probability, and analytical physics.</li>
+              <li>Built early foundational interest in computational logic and programming principles.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skew Divider -->
+    <div class="manga-divider-line" aria-hidden="true">
+      <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+        <polygon points="0,40 1200,0 1200,40" fill="#14142a"/>
+      </svg>
+    </div>
+
+    <!-- =======================================================================
+         PROJECTS SECTION ("作品") - MANGA COVER STYLE & 3D TILT
+         ======================================================================= -->
+    <section id="projects" class="section-skew-top">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <div class="section-jp-tag">作品 – Projects</div>
+          <h2 class="section-title">FEATURED <span>CREATIONS</span></h2>
+          <p class="section-subtitle">Real codebases, algorithmic tools, and intelligent agents constructed with production-readiness in mind.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- PROJECT 0 [FEATURED]: Buy or Wait Agent -->
+          <div class="project-card featured holographic-shine reveal" data-tilt>
+            <div class="project-burst-tag">
+              <span class="burst-badge gold">★ TOP 100 WORLDWIDE // HACKERRANK</span>
+            </div>
+
+            <div class="project-cover-banner" style="height: 190px;">
+              <svg class="project-cover-svg" viewBox="0 0 800 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="800" height="240" fill="#111126"/>
+                <!-- Matrix-like glowing circuits -->
+                <path d="M0 60 H200 L240 100 H460 L500 60 H800" stroke="#fbbf24" stroke-width="2" opacity="0.35"/>
+                <path d="M0 180 H300 L340 140 H560 L600 180 H800" stroke="#22d3ee" stroke-width="2" opacity="0.35"/>
+                <circle cx="240" cy="100" r="5" fill="#fbbf24"/>
+                <circle cx="500" cy="60" r="5" fill="#22d3ee"/>
+                <circle cx="340" cy="140" r="5" fill="#ff3d81"/>
+                <!-- Floating Agent Shield -->
+                <polygon points="400,40 460,75 460,150 400,195 340,150 340,75" stroke="#fbbf24" stroke-width="3" fill="#1b1b36" opacity="0.9"/>
+                <text x="400" y="112" fill="#fbbf24" font-family="'Orbitron', sans-serif" font-size="16" font-weight="900" text-anchor="middle">AI AGENT</text>
+                <text x="400" y="138" fill="#22d3ee" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">ORCHESTRATE</text>
+              </svg>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Buy or Wait Agent [FEATURED]</h3>
+              <p class="project-desc">
+                Built for the <strong>HackerRank Orchestrate (September Edition)</strong> hackathon, where it achieved a <strong>TOP 100 WORLDWIDE</strong> ranking.
+                <!-- PLACEHOLDER: 2-3 lines on what the agent does, how it decides, and the tech/LLM/tools used -->
+                The autonomous agent continuously analyzes dynamic market pricing patterns, product sentiment, and historical fluctuations to make real-time decisions on whether an online shopper should execute an immediate purchase or wait for a price drop.
+              </p>
+
+              <div class="project-tags-list">
+                <span class="project-tag">AI Agent</span>
+                <span class="project-tag">HackerRank Orchestrate</span>
+                <span class="project-tag">Decision Engine</span>
+                <span class="project-tag">LLM Orchestration</span>
+                <span class="project-tag">Top 100 Global</span>
+              </div>
+
+              <div class="project-footer-actions">
+                <!-- PLACEHOLDER: repo link -->
+                <a href="https://github.com/YashMore641" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>View Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 1: Banking Application -->
+          <div class="project-card reveal" data-tilt>
+            <div class="project-cover-banner">
+              <svg class="project-cover-svg" viewBox="0 0 400 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="180" fill="#0f0f20"/>
+                <path d="M50 140 L200 40 L350 140 Z" stroke="#8b5cf6" stroke-width="3" fill="#181834"/>
+                <line x1="80" y1="140" x2="80" y2="100" stroke="#ff3d81" stroke-width="4"/>
+                <line x1="140" y1="140" x2="140" y2="70" stroke="#22d3ee" stroke-width="4"/>
+                <line x1="200" y1="140" x2="200" y2="50" stroke="#fbbf24" stroke-width="4"/>
+                <line x1="260" y1="140" x2="260" y2="70" stroke="#22d3ee" stroke-width="4"/>
+                <line x1="320" y1="140" x2="320" y2="100" stroke="#ff3d81" stroke-width="4"/>
+                <rect x="40" y="140" width="320" height="15" fill="#2d2d5c"/>
+                <text x="200" y="125" fill="#5eead4" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold" text-anchor="middle">JDBC // TRANSACTION ENGINE</text>
+              </svg>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Banking Application</h3>
+              <p class="project-desc">
+                Console-based banking system engineered in Java, JDBC, and MySQL for robust account creation, deposit, withdrawal, and balance inquiries, featuring ACID-compliant database connectivity and efficient transaction handling.
+              </p>
+
+              <div class="project-tags-list">
+                <span class="project-tag">Java</span>
+                <span class="project-tag">JDBC</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">OOP</span>
+                <span class="project-tag">Transaction Management</span>
+              </div>
+
+              <div class="project-footer-actions">
+                <a href="https://github.com/YashMore641/JAVA-APPLICATIONS/blob/main/BankingApplication.java" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>View on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: Algorithm Visualizer (With Interactive Widget!) -->
+          <div class="project-card reveal" data-tilt>
+            <div class="project-cover-banner">
+              <svg class="project-cover-svg" viewBox="0 0 400 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="180" fill="#0c0c1a"/>
+                <!-- Graph bars -->
+                <rect x="50" y="110" width="20" height="50" rx="3" fill="#8b5cf6"/>
+                <rect x="85" y="80" width="20" height="80" rx="3" fill="#ff3d81"/>
+                <rect x="120" y="50" width="20" height="110" rx="3" fill="#22d3ee"/>
+                <rect x="155" y="125" width="20" height="35" rx="3" fill="#fbbf24"/>
+                <rect x="190" y="70" width="20" height="90" rx="3" fill="#8b5cf6"/>
+                <rect x="225" y="40" width="20" height="120" rx="3" fill="#ff3d81"/>
+                <rect x="260" y="90" width="20" height="70" rx="3" fill="#22d3ee"/>
+                <rect x="295" y="60" width="20" height="100" rx="3" fill="#5eead4"/>
+                <rect x="330" y="30" width="20" height="130" rx="3" fill="#fbbf24"/>
+              </svg>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Algorithm Visualizer</h3>
+              <p class="project-desc">
+                Interactive application that visualizes sorting algorithms step-by-step. Users pick an algorithm and observe comparisons, swaps, and time complexity in real-time.
+              </p>
+
+              <!-- Working Mini Sorting-Bar Demo in Plain JS -->
+              <div class="algo-demo-widget">
+                <div class="demo-header-row">
+                  <span class="demo-title">⚡ LIVE SORTING SANDBOX</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-pink);">INTERACTIVE</span>
+                </div>
+
+                <div class="demo-controls-bar">
+                  <label for="algo-select" class="visually-hidden" style="display:none;">Select Algorithm</label>
+                  <select id="algo-select" class="algo-select" aria-label="Select sorting algorithm">
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="selection">Selection Sort</option>
+                    <option value="insertion">Insertion Sort</option>
+                  </select>
+                  <button id="algo-btn-sort" class="algo-btn">▶ Run Sort</button>
+                  <button id="algo-btn-reset" class="algo-btn secondary">↻ Randomize</button>
+                </div>
+
+                <!-- Animated Bars Canvas -->
+                <div id="sorting-bars-container" class="sorting-bars-container" aria-label="Sorting bars simulation"></div>
+
+                <div class="demo-status-text">
+                  <span id="demo-status-msg">Ready: Pick an algorithm and click Run</span>
+                  <span>O(N²) Simulation</span>
+                </div>
+              </div>
+
+              <div class="project-tags-list">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">DSA</span>
+                <span class="project-tag">Visualization</span>
+                <span class="project-tag">Sorting</span>
+                <span class="project-tag">Interactive JS</span>
+              </div>
+
+              <div class="project-footer-actions">
+                <a href="https://github.com/YashMore641/DSA-PROJECTS/blob/main/visualize.py" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>View Source (Python)</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: Coming Soon - Spring Boot + Spring AI Project -->
+          <div class="project-card reveal" data-tilt>
+            <div class="project-burst-tag">
+              <span class="burst-badge" style="background: var(--accent-violet);">QUEST IN PROGRESS</span>
+            </div>
+
+            <div class="project-cover-banner">
+              <svg class="project-cover-svg" viewBox="0 0 400 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="180" fill="#0d0d1a"/>
+                <circle cx="200" cy="90" r="45" stroke="#ff3d81" stroke-width="2" stroke-dasharray="6 6"/>
+                <circle cx="200" cy="90" r="32" stroke="#22d3ee" stroke-width="2"/>
+                <polygon points="190,75 215,90 190,105" fill="#8b5cf6"/>
+                <text x="200" y="160" fill="#a2a2c4" font-family="'Orbitron', sans-serif" font-size="12" letter-spacing="3" text-anchor="middle">INCUBATING SYSTEM</text>
+              </svg>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Next-Gen Backend &amp; Spring AI Service</h3>
+              <p class="project-desc">
+                An upcoming distributed microservices system utilizing <strong>Spring Boot 3.x</strong>, <strong>Spring AI</strong> with LLM embeddings, and event-driven messaging with Apache Kafka for intelligent automated task orchestration.
+              </p>
+
+              <div class="project-tags-list">
+                <span class="project-tag">Spring Boot</span>
+                <span class="project-tag">Spring AI</span>
+                <span class="project-tag">Apache Kafka</span>
+                <span class="project-tag">Microservices</span>
+                <span class="project-tag">Vector DB</span>
+              </div>
+
+              <div class="project-footer-actions">
+                <button class="btn-outline" disabled style="opacity: 0.6; cursor: not-allowed;">
+                  <span>🔒 Blueprint in Development</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skew Divider -->
+    <div class="manga-divider-line" aria-hidden="true">
+      <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+        <polygon points="0,0 1200,40 0,40" fill="#14142a"/>
+      </svg>
+    </div>
+
+    <!-- =======================================================================
+         KEY ACHIEVEMENTS SECTION ("実績") - TROPHY CARDS
+         ======================================================================= -->
+    <section id="achievements" class="section-skew-top">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <div class="section-jp-tag">実績 – Achievements</div>
+          <h2 class="section-title">HALL OF <span>GLORY</span></h2>
+          <p class="section-subtitle">Milestone recognitions across academic performance, enterprise simulations, and cloud credentials.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="achievements-grid">
+          
+          <!-- Achievement 1: HackerRank Top 100 -->
+          <div class="achievement-trophy-card reveal" data-tilt>
+            <div class="achievement-trophy-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <span class="achievement-category">// HACKATHON GLORY</span>
+            <h3 class="achievement-title">Top 100 Worldwide</h3>
+            <p class="achievement-desc">
+              Finished in the <strong>Top 100 Worldwide</strong> during the HackerRank Orchestrate (September Edition) hackathon for building the autonomous Buy or Wait Agent.
+            </p>
+          </div>
+
+          <!-- Achievement 2: Academic Excellence -->
+          <div class="achievement-trophy-card reveal" data-tilt>
+            <div class="achievement-trophy-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <span class="achievement-category">// SCHOLASTIC EXCELLENCE</span>
+            <h3 class="achievement-title">9.55 CGPA in B.E. (IT)</h3>
+            <p class="achievement-desc">
+              Achieved an outstanding <strong>9.55 CGPA</strong> in Bachelor of Engineering (Information Technology) at Savitribai Phule Pune University, demonstrating sustained discipline.
+            </p>
+          </div>
+
+          <!-- Achievement 3: JPMorgan Simulation -->
+          <div class="achievement-trophy-card reveal" data-tilt>
+            <div class="achievement-trophy-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <span class="achievement-category">// ENTERPRISE SIMULATION</span>
+            <h3 class="achievement-title">JPMorgan Chase &amp; Co. Virtual Experience</h3>
+            <p class="achievement-desc">
+              Successfully executed 5 backend tasks on Forage covering Spring Boot REST API integration, Apache Kafka streaming pipelines, and H2 database configurations.
+            </p>
+          </div>
+
+          <!-- Achievement 4: Oracle Cloud Cert -->
+          <div class="achievement-trophy-card reveal" data-tilt>
+            <div class="achievement-trophy-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <span class="achievement-category">// INDUSTRY CREDENTIAL</span>
+            <h3 class="achievement-title">Oracle Cloud Infrastructure (OCI)</h3>
+            <p class="achievement-desc">
+              Certified in <strong>OCI Foundations Associate</strong>, demonstrating comprehension of cloud architecture, compute resources, VPC networking, storage, and IAM security.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skew Divider -->
+    <div class="manga-divider-line" aria-hidden="true">
+      <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+        <polygon points="0,40 1200,0 1200,40" fill="#14142a"/>
+      </svg>
+    </div>
+
+    <!-- =======================================================================
+         CONTACT SECTION ("連絡")
+         ======================================================================= -->
+    <section id="contact" class="section-skew-top">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <div class="section-jp-tag">連絡 – Contact</div>
+          <h2 class="section-title">TRANSMIT <span>MESSAGE</span></h2>
+          <p class="section-subtitle">Interested in collaborating, hiring for a backend position, or exploring software projects together? Dispatch a transmission!</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Side Contact Info Panel -->
+          <div class="contact-info-panel reveal">
+            <div class="contact-card-box" data-tilt>
+              <div class="contact-manga-callout">COMMUNICATION LINK // 直通通信</div>
+              <p class="contact-desc">
+                My inbox is always receptive to opportunities, hackathon partnerships, open-source ideas, or casual tech discussions about Java &amp; Distributed Systems.
+              </p>
+
+              <div class="contact-links-list">
+                <!-- Email -->
+                <div class="contact-link-item">
+                  <div class="contact-icon-box" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="contact-detail-text">
+                    <span class="contact-label">DIRECT EMAIL</span>
+                    <a href="mailto:yashmore0612@gmail.com" class="contact-value">yashmore0612@gmail.com</a>
+                  </div>
+                  <button id="btn-copy-email" class="btn-copy-email" title="Copy email address" aria-label="Copy email address">
+                    Copy
+                  </button>
+                </div>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/yash-more-aa26b6331" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                  <div class="contact-icon-box" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </div>
+                  <div class="contact-detail-text">
+                    <span class="contact-label">PROFESSIONAL NETWORK</span>
+                    <span class="contact-value">linkedin.com/in/yash-more</span>
+                  </div>
+                </a>
+
+                <!-- Location -->
+                <div class="contact-link-item">
+                  <div class="contact-icon-box" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="contact-detail-text">
+                    <span class="contact-label">LOCATION</span>
+                    <span class="contact-value">Pune, Maharashtra, India</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Panel -->
+          <div class="contact-form-panel reveal">
+            <div class="form-header-badge">
+              <span>✉ TRANSMIT SIGNAL // 自動メール作成</span>
+            </div>
+
+            <form id="contact-form" novalidate>
+              <!-- Name Input -->
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name / 氏名</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Makoto Shinkai" required>
+              </div>
+
+              <!-- Email Input -->
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email / メールアドレス</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="name@domain.com" required>
+              </div>
+
+              <!-- Message Input -->
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message / 本文</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Hello Yash, I came across your portfolio and would love to discuss a backend opportunity..." required></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn-primary" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Send Message (Opens Mail Client)</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER & BACK TO TOP BURST
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <!-- Back to Top Burst Button -->
+      <button id="back-to-top" class="footer-burst-backtop" aria-label="Back to top">
+        <span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+          <small style="font-family: var(--font-action); font-size: 0.65rem; line-height: 1;">TOP</small>
+        </span>
+      </button>
+
+      <p class="footer-credits">
+        Designed &amp; built by <span>Yash Darshan More</span> © 2026
+      </p>
+
+      <p class="footer-kanji-blessing">
+        継続は力なり — <em>Perseverance is power. Building scalable systems with passion.</em>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Toast Notice Element -->
+  <div id="toast-notice" class="toast-notice" role="status" aria-live="polite"></div>
+
+  <!-- JavaScript Engine -->
+  <script src="js/main.js"></script>
+</body>
+</html>
